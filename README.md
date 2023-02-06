@@ -14,6 +14,8 @@ What things you need to install the software and how to install them:
 -   Python 3.x
 -   NodeJS and npm
 -   pip
+-   virtualenv
+
 
 ### Installing
 
@@ -26,7 +28,7 @@ Clone the repository to your local machine:
 
 Create a virtual environment and activate it:
 
-    python -m venv venv
+    virtualenv venv
     source venv/bin/activate
 
 Install the required dependencies:
