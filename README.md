@@ -8,6 +8,7 @@ This is a Tic Tac Toe game that can be played in your browser. The game is made 
 ### Flask app
 
 1.  Navigate to the Flask app directory
+2.  Setup python environment by running `python -m venv venv source venv/bin/activate`
 2.  Install the required packages by running `pip install -r requirements.txt`
 3.  Start the Flask app by running `flask run`
 4.  The Flask app should now be running on `http://localhost:5000`
