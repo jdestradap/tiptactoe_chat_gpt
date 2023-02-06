@@ -26,8 +26,6 @@ Clone the repository to your local machine:
 
 Create a virtual environment and activate it:
 
-bashCopy code
-
     python -m venv venv
     source venv/bin/activate
 
