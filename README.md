@@ -1,33 +1,71 @@
 
 # Tic Tac Toe
 
-This is a Tic Tac Toe game that can be played in your browser. The game is made up of two parts: a Flask app and a React app.
+A simple Tic Tac Toe game built with Flask and ReactJS. This game allows players to play Tic Tac Toe against each other on the same device or over a network.
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+What things you need to install the software and how to install them:
+
+-   Python 3.x
+-   NodeJS and npm
+-   pip
+
+### Installing
+
+A step by step series of examples that tell you how to get a development env running.
+
+Clone the repository to your local machine:
+
+
+`git clone https://github.com/<your-username>/tic-tac-toe.git` 
+
+Create a virtual environment and activate it:
+
+bashCopy code
+
+    python -m venv venv
+    source venv/bin/activate
+
+Install the required dependencies:
+
+`pip install -r requirements.txt` 
+
+Go to the ReactJS app directory:
+
+`cd tic-tac-toe/client` 
+
+Install the required dependencies:
+
+`npm install` 
 
 ## Running the program
 
-### Flask app
+In order to run the program, two servers need to be started: one for the Flask app and one for the ReactJS app.
 
-1.  Navigate to the Flask app directory
-2.  Setup python environment by running `python -m venv venv source venv/bin/activate`
-2.  Install the required packages by running `pip install -r requirements.txt`
-3.  Start the Flask app by running `flask run`
-4.  The Flask app should now be running on `http://localhost:5000`
+Start the Flask app:
 
-### React app
+makefileCopy code
 
-1.  Navigate to the React app directory
-2.  Install the required packages by running `npm install`
-3.  Start the React app by running `npm start`
-4.  The React app should now be running on `http://localhost:3000`
+`FLASK_APP=app.py FLASK_ENV=development flask run` 
 
-## How the program works
+Start the ReactJS app:
 
-The React app is responsible for displaying the game board, handling user inputs and communicating with the Flask app through API calls.
+sqlCopy code
 
-When the React app starts, it makes a call to the Flask app to get the initial state of the game board and the current player. After that, every time a player makes a move, the React app sends a PUT request to the Flask app with the index of the cell that was clicked. The Flask app then updates the game board and sends back the updated state to the React app.
+`npm start` 
 
-The game ends when one of the players gets three in a row or when all the cells are filled without a winner. The React app then displays the winner if there is one, otherwise it shows that the game ended in a draw.
+Open a web browser and go to [http://localhost:3000](http://localhost:3000/) to play the game.
 
-## Enjoy the game!
+## Built With
 
-Hope you enjoy playing this Tic Tac Toe game!
+-   [Flask](https://flask.palletsprojects.com/en/1.1.x/) - A micro web framework written in Python
+-   [ReactJS](https://reactjs.org/) - A JavaScript library for building user interfaces
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](https://chat.openai.com/chat/LICENSE.md) file for details.
